@@ -4,6 +4,10 @@ import dspy
 import os
 
 
+lm = dspy.LM('openai/gpt-4o-mini', api_key="OPENAI_API_KEY")
+dspy.configure(lm=lm)
+
+
 # Example A: Sentiment Classification
 # example from the SST-2 dataset.
 sentence = "it's a tough and often tiring journey."  # example from the SST-2 dataset.

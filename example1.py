@@ -2,6 +2,8 @@
 import dspy
 import os
 
+lm = dspy.LM('openai/gpt-4o-mini', api_key="OPENAI_API_KEY")
+dspy.configure(lm=lm)
 
 
 # math = dspy.ChainOfThought("question -> answer: float")
