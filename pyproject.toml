@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "dspy-prompts"
+version = "0.1.0"
+description = ""
+authors = ["mshoaibnoor <muhammad.shoaib.masood@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+dspy = "^2.5.29"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
