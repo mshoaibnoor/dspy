@@ -25,17 +25,17 @@ dspy.configure(lm=lm)
 
 from typing import Literal
 
-# class Classify(dspy.Signature):
-#     """Classify sentiment of a given sentence."""
+class Classify(dspy.Signature):
+    """Classify sentiment of a given sentence."""
 
-#     sentence: str = dspy.InputField()
-#     sentiment: Literal['positive', 'negative', 'neutral'] = dspy.OutputField()
-#     confidence: float = dspy.OutputField()
+    sentence: str = dspy.InputField()
+    sentiment: Literal['positive', 'negative', 'neutral'] = dspy.OutputField()
+    confidence: float = dspy.OutputField()
 
-# classify = dspy.Predict(Classify)
-# prediction = classify(sentence="This book was super fun to read, though not the last chapter.")
+classify = dspy.Predict(Classify)
+prediction = classify(sentence="This book was super fun to read, though not the last chapter.")
 
-# print(prediction)
+print(prediction)
 
 
 # text = "Apple Inc. announced its latest iPhone 14 today. The CEO, Tim Cook, highlighted its new features in a press release."
